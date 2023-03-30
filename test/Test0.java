@@ -6,6 +6,7 @@ import java.util.Scanner;
 class Test {
 	public static void main(String[] args) {
 
+   int test = 1;
 		Scanner sc = new Scanner(System.in);
 		Calendar c = Calendar.getInstance();
 		
