@@ -15,13 +15,18 @@ public class MemberUtil {
 	// 회원정보입력
 	public void memberInfo() {
 
-		Member member01 = new Member("A", "000");
+		/*Member member01 = new Member("A", "000");
 		Member member02 = new Member("B", "111");
 		Member member03 = new Member("C", "222");
 
 		members.add(member01);
 		members.add(member02);
-		members.add(member03);
+		members.add(member03);*/
+		
+		members.add(new Member("A","000"));
+		members.add(new Member("B","111"));
+		members.add(new Member("C","222"));
+		
 
 		this.idCheck();
 	}
@@ -38,7 +43,7 @@ public class MemberUtil {
 			if (id.equals(members.get(i).getId())) {
 				idCnt++;
 				index = i; //id가같을때 index값저장
-			}
+			}	
 		}
 
 		if (idCnt != 1) {
